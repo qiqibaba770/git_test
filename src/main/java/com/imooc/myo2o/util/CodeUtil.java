@@ -22,6 +22,7 @@ public class CodeUtil {
          if (verifyCode == null || !verifyCode.equals(verifyCode)) {
              return false;
          }
+//         第一次修改
          return true;
     }
 
