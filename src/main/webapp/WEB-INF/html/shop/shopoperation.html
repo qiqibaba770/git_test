@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+</head>
+<style>
+    body{
+        background-color: #f0f0f0;
+        font-family: "微软雅黑";
+    }
+    h1{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .body {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .tishi {
+        margin-right: 20px;
+    }
+
+</style>
+<body>
+<div class="body">
+    <h1>商店信息</h1>
+    <span class="tishi">商铺名称:</span><input type="text" id="shop-name" placeholder="请输入商铺名称" style="width: 200px;height: 30px;margin-top: 20px"><br>
+    <!-- 商铺分类 下拉列表-->
+    <span class="tishi">店铺分类</span>
+    <select id="shop-category">
+    </select>
+    <!-- 区域分类 下拉列表 -->
+    <span class="tishi">所属区域</span>
+    <select id="shop-area">
+    </select>
+    <!-- 详细地址 text -->
+    <span class="tishi">详细地址:</span><input type="text" id="shop-addr" placeholder="请输入商铺地址"
+                                               style="width: 200px;height: 30px;margin-top: 20px"><br>
+    <!-- 联系电话 text -->
+    <span class="tishi">联系电话:</span><input type="text" id="shop-phone" placeholder="请输入联系电话"
+                                               style="width: 200px;height: 30px;margin-top: 20px"><br>
+    <!-- 缩略图 上传控件 -->
+    <span class="tishi">缩略图</span><input type="file" id="shop-img"
+                                            style="width: 200px;height: 30px;margin-top: 20px"><br>
+    <!-- 店铺简介 textarea -->
+    <span class="tishi">店铺简介</span>
+    <textarea id="shop-desc" placeholder="请输入店铺简介"></textarea>
+    <!-- 验证码 kaptcha -->
+    <span class="tishi">验证码</span>
+    <input type="text" placeholder="请输入验证码" id="j_captch"/>
+    <img id="captch_image" alt="点击更换" title="点击更换"
+         onclick="changeVerifyCode(this)" src="../Kaptcha" />
+
+    <!-- 返回按钮 -->
+    <button id="back" class="button">返回</button>
+    <!-- 提交按钮 -->
+    <button id="submit" class="button">提交</button>
+
+
+
+
+
+
+</div>
+
+</body>
+<script src="/resource/js/config.js"></script>
+<script src="/resource/lib/jQuery.js"></script>
+<script src="/resource/js/shop/shopoperation.js" charset="UTF-8"></script>
+<script src="/resource/js/common/common.js" charset="UTF-8"></script>
+
+
+</html>
